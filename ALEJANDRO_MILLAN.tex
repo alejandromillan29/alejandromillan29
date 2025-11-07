@@ -1,0 +1,82 @@
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+% ModernCV style and color
+\moderncvstyle{classic} % 'banking' can conflict with FA icons
+\moderncvcolor{blue}
+
+% Encoding and geometry
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.88, top=1.5cm, bottom=1.5cm, left=1.3cm, right=1.3cm]{geometry}
+\setlength{\hintscolumnwidth}{2.8cm} % adjust spacing for dates
+
+% Ensure icons are loaded properly
+\usepackage{fontawesome5}
+
+% Personal information
+\name{Alejandro}{Millan Duarte}
+\email{amilland29@gmail.com}
+\homepage{amillan.net}
+\social[linkedin]{amilland}
+\social[github]{alejandromillan29}
+\extrainfo{United States — US Citizen (Remote — currently based in Panama)}
+
+\begin{document}
+
+% Title
+\makecvtitle
+
+%----- Profile -----
+\vspace{-1em}
+\section{Profile}
+Frontend Developer with a strong background in modern web and mobile technologies, including Vue.js, Quasar, Ionic, and Capacitor. Experienced in leading teams, building scalable frontends, and integrating cloud services. Passionate about delivering smooth, performant user experiences and clean, maintainable code. Fluent in Spanish and advanced English.
+
+%----- Technical Skills -----
+\section{Technical Skills}
+\cvitem{Frontend}{HTML, CSS, JavaScript (ES6+), TypeScript, Vue.js, Nuxt, Nuxt UI, Quasar, Angular, Ionic, Capacitor, TailwindCSS}
+\cvitem{Backend / Cloud}{Firebase (Firestore, Authentication, Storage, App Check, Functions, Messaging, Hosting, App Hosting, Analytics), AWS (Elastic Beanstalk, Lambda, Amplify, RDS)}
+\cvitem{Testing}{Cypress, Appium}
+\cvitem{Deployment}{Fastlane, GitHub Actions}
+\cvitem{Methodologies}{Agile, Scrum, Git-based workflows}
+\cvitem{Languages}{Spanish (Native), English (Advanced)}
+
+%----- Professional Experience -----
+\section{Professional Experience}
+
+\cventry{2023 -- Present}{Tech Lead}{Blue Core S.A.}{}{}{
+\begin{itemize}
+  \item Currently leading the team building in charge of developing the online web banking platform for a top-tier bank in Panama.
+  \item Overseeing architecture, code reviews, code quality, and team mentorship.
+  \item Previously lead the development of all new features and functionalities for a major Panamanian bank mobile app.
+\end{itemize}}
+
+\cventry{2022 -- Present}{Lead Developer (Side Project)}{One Spot}{}{}{
+\begin{itemize}
+  \item Responsible of developing a ticketing platform for social and cultural events in Panama City.
+  \item Built mobile and web apps using Vue, Ionic, and Capacitor with a serverless Firebase backend.
+  \item Managed the full lifecycle — from design to deployment — across web and app stores.
+\end{itemize}}
+
+\cventry{2021 -- 2022}{QA Engineer}{Blue Core S.A.}{}{}{
+\begin{itemize}
+  \item Developed end-to-end test suites for mobile banking apps using Cypress and Appium.
+  \item Built and maintained deployment pipelines for iOS and Android using Fastlane and GitHub Actions.
+\end{itemize}}
+
+\cventry{2020}{Frontend Developer}{Bath \& Body Works}{}{}{
+\begin{itemize}
+  \item Maintained and updated e-commerce sites for 8 Latin American countries.
+  \item Worked with VTEX CMS to deliver regionalized content and features.
+\end{itemize}}
+
+\cventry{2019}{Junior Web Developer}{Venmetro Inc.}{}{}{
+\begin{itemize}
+  \item Contributed to the development of a fintech platform using Ruby on Rails.
+  \item Collaborated with backend and design teams to enhance product usability.
+\end{itemize}}
+
+%----- Education -----
+\section{Education}
+\cventry{}{Master's Degree in Software Engineering}{}{Panama}{}{}
+\cventry{}{Bachelor's Degree in Systems Engineering}{}{Panama}{}{}
+
+\end{document}
