@@ -1,16 +1,18 @@
-\documentclass[11pt,letterpaper,sans]{moderncv}
+\documentclass[10pt,letterpaper,sans]{moderncv}
 
-% ModernCV style and color
-\moderncvstyle{classic} % 'banking' can conflict with FA icons
+% Style
+\moderncvstyle{classic}
 \moderncvcolor{blue}
 
-% Encoding and geometry
+% Encoding & layout
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.88, top=1.5cm, bottom=1.5cm, left=1.3cm, right=1.3cm]{geometry}
-\setlength{\hintscolumnwidth}{2.8cm} % adjust spacing for dates
-
-% Ensure icons are loaded properly
+\usepackage[scale=0.92, top=1.2cm, bottom=1.2cm, left=1.3cm, right=1.3cm]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
 \usepackage{fontawesome5}
+
+% Reduce vertical spacing
+\AtBeginDocument{\recomputelengths}
+\setlength{\makecvtitlenamewidth}{10cm}
 
 % Personal information
 \name{Alejandro}{Millan}
@@ -22,13 +24,14 @@
 
 \begin{document}
 
-% Title
 \makecvtitle
+\vspace{-1.2em}
 
 %----- Profile -----
-\vspace{-1em}
 \section{Profile}
-Frontend Developer with a strong background in modern web and mobile technologies, including Vue.js, Quasar, Ionic, and Capacitor. Experienced in leading teams, building scalable frontends, and integrating cloud services. Passionate about delivering smooth, performant user experiences and clean, maintainable code. Fluent in Spanish and advanced English.
+Frontend Developer / Tech Lead with strong experience building scalable web and mobile applications using Vue, Angular, Ionic, and Capacitor. Proven leadership in fintech environments, frontend architecture, and cloud integrations. Focused on performance, maintainability, and high-quality user experiences.
+
+\vspace{-0.4em}
 
 %----- Technical Skills -----
 \section{Technical Skills}
@@ -45,6 +48,8 @@ Frontend Developer with a strong background in modern web and mobile technologie
 \cvitem{Methodologies}{Agile, Scrum, Git-based workflows}
 \cvitem{Languages}{Spanish (Native), English (Advanced)}
 
+\vspace{-0.4em}
+
 %----- Professional Experience -----
 \section{Professional Experience}
 
@@ -55,6 +60,8 @@ Frontend Developer with a strong background in modern web and mobile technologie
   \item Previously lead the development of all new features and functionalities for a major Panamanian bank mobile app.
 \end{itemize}}
 
+\vspace{-0.2em}
+
 \cventry{2022 -- Present}{Lead Developer (Side Project)}{One Spot}{}{}{
 \begin{itemize}
   \item Responsible of developing a ticketing platform for social and cultural events in Panama City.
@@ -62,11 +69,15 @@ Frontend Developer with a strong background in modern web and mobile technologie
   \item Managed the full lifecycle — from design to deployment — across web and app stores.
 \end{itemize}}
 
+\vspace{-0.2em}
+
 \cventry{2021 -- 2022}{QA Engineer}{Blue Core S.A.}{}{}{
 \begin{itemize}
   \item Developed end-to-end test suites for mobile banking apps using Cypress and Appium.
   \item Built and maintained deployment pipelines for iOS and Android using Fastlane and GitHub Actions.
 \end{itemize}}
+
+\vspace{-0.2em}
 
 \cventry{2020}{Frontend Developer}{Bath \& Body Works}{}{}{
 \begin{itemize}
@@ -74,11 +85,15 @@ Frontend Developer with a strong background in modern web and mobile technologie
   \item Worked with VTEX CMS to deliver regionalized content and features.
 \end{itemize}}
 
+\vspace{-0.2em}
+
 \cventry{2019}{Junior Web Developer}{Venmetro Inc.}{}{}{
 \begin{itemize}
   \item Contributed to the development of a fintech platform using Ruby on Rails.
   \item Collaborated with backend and design teams to enhance product usability.
 \end{itemize}}
+
+\vspace{-0.4em}
 
 %----- Education -----
 \section{Education}
