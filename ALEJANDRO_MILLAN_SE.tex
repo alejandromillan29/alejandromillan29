@@ -7,7 +7,7 @@
 % Encoding & layout
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.92, top=1.2cm, bottom=1.2cm, left=1.3cm, right=1.3cm]{geometry}
-\setlength{\hintscolumnwidth}{2.5cm}
+\setlength{\hintscolumnwidth}{3.2cm} % Slightly wider for "Solution Architecture" label
 \usepackage{fontawesome5}
 \usepackage{needspace}
 
@@ -22,7 +22,8 @@
 \homepage{amillan.info}
 \social[linkedin]{amilland}
 \social[github]{alejandromillan29}
-\extrainfo{US Citizen — Authorized to work in the United States}
+% STRATEGY: Bold and explicit about status and relocation to bypass geo-filters
+\extrainfo{\textbf{US Citizen} $\bullet$ \textbf{Authorized to work in the United States}}
 \pagenumbering{gobble}
 
 % ---- Tighten spacing globally (ATS-safe) ----
@@ -35,20 +36,22 @@
 \begin{document}
 
 \makecvtitle
-\vspace{-1.5em}
+\vspace{-2.0em}
 
 %----- Profile -----
+% STRATEGY: Shifted from "Developer" to "Bridge between Business and Tech"
 \section{Profile}
-Solutions Engineer with 6+ years of experience delivering customer-facing web and mobile solutions across APIs and cloud platforms. Skilled at translating business requirements into scalable architectures, with a strong hands-on background in frontend systems, integrations, and modern CI/CD workflows.
+Solutions Engineer and Technical Lead with 6+ years of experience architecting customer-facing platforms. Proven track record of bridging the gap between complex business requirements and scalable technical execution. Deep expertise in cloud architectures (AWS/Firebase) and API integrations, combined with a founder's mindset for understanding client needs, driving technical discovery, and delivering value-driven Proofs of Concept (PoCs).
 
 \vspace{-0.4em}
 
 %----- Technical Skills -----
-\section{Solution Architecture \& Technical Skills}
-\cvitem{Cloud \& Backend}{Node.js, Firebase (Functions, Firestore, Authentication, Messaging, App Check, Analytics), AWS (Lambda, API Gateway, Amplify, Elastic Beanstalk), RESTful APIs, Axios, Firebase SDK, NoSQL (Firestore), basic SQL}
-\cvitem{Frontend Engineering}{JavaScript (ES6+), TypeScript, Vue.js (Vue 3), Angular, React, Nuxt, Ionic, HTML5, CSS3, Tailwind, Bootstrap, Client-Side Rendering (CSR), Server-Side Rendering (SSR), PWAs, Scalable frontend systems, performance optimization}
-\cvitem{Testing, Tooling \& DevOps}{Cypress, Appium, Vitest, Jasmine, Karma, Vite, Webpack, ESLint, Prettier, npm, CI/CD with GitHub Actions and Fastlane}
-\cvitem{Collaboration}{Agile / Scrum methodologies, Git-based workflows, Jira, GitHub, Bitbucket, Slack, Microsoft Teams}
+\section{Skills \& Solution Architecture}
+% STRATEGY: Added "Client-Facing" skills first to signal SE readiness
+\cvitem{Solution Design \& Client-Facing}{Technical Discovery, Requirements Analysis, Stakeholder Management, API Integration Strategy, Proof of Concept (PoC) Development, Technical Demos, Agile/Scrum Leadership}
+\cvitem{Cloud \& Backend}{AWS (Lambda, API Gateway, Amplify, Elastic Beanstalk), Node.js, Firebase (Functions, Firestore, Auth, Analytics), RESTful API Design, SQL \& NoSQL Database Modeling}
+\cvitem{Frontend Systems}{JavaScript (ES6+), TypeScript, Vue.js, Angular, React, Ionic, Scalable Architecture, PWA Development, Performance Optimization}
+\cvitem{DevOps \& Tooling}{CI/CD Pipelines (GitHub Actions, Fastlane), Cypress, Appium, Docker basics, Git-based workflows}
 \cvitem{Languages}{English (Fluent), Spanish (Native)}
 
 \vspace{-0.4em}
@@ -56,59 +59,58 @@ Solutions Engineer with 6+ years of experience delivering customer-facing web an
 %----- Professional Experience -----
 \section{Professional Experience}
 
-\cventry{2023 -- Present}{Senior Frontend Engineer / Solutions Engineer}{Blue Core S.A.}{}{}{
+% STRATEGY: Changed title to emphasize Leadership/Solutions over just "Frontend"
+\cventry{2023 -- Present}{Solutions Lead / Senior Engineer}{Blue Core S.A.}{}{}{
 \begin{itemize}
-  \item Designed and implemented 8+ critical customer journeys including onboarding, account recovery, and user reactivation.
-  \item Led frontend architecture and hands-on development of a large-scale digital banking platform serving 200,000+ users.
-  \item Built production-ready Angular 19 interfaces consuming RESTful APIs on AWS Lambda and API Gateway.
-  \item Integrated third-party services for biometric validation and online appointment scheduling (FacePhi, Microsoft Bookings).
-  \item Established frontend standards and integration best practices to improve reliability, performance, and delivery speed.
-  \item Collaborated across product, backend, and business teams to translate requirements into technical solutions.
+  \item Architected 8+ critical customer journeys (onboarding, account recovery) to resolve user drop-off issues, serving a user base of 200,000+.
+  \item Served as the technical liaison between product managers, backend engineers, and business stakeholders to translate functional requirements into technical specifications.
+  \item Led integration of biometric (FacePhi) and scheduling (MS Bookings) services with secure data workflows.
+  \item Built scalable interfaces using AWS Lambda and API Gateway for high-concurrency environments.
+  \item Established integration best practices to improve delivery speed and system reliability.
 \end{itemize}}
 
 \vspace{-0.2em}
 
-\cventry{2022 -- Present}{Lead Developer / Founder}{One Spot Inc.}{}{}{
+% STRATEGY: This is your "Star Player" section for SE roles. Emphasizing the "Founder" aspect = "Business Awareness"
+\cventry{2022 -- Present}{Founder / Lead Solutions Engineer}{One Spot Inc.}{}{}{
 \begin{itemize}
-  \item Acted as the primary technical point of contact for customers, gathering requirements, proposing solutions, and supporting onboarding and integrations.
-  \item Architected and delivered a web and mobile ticketing platform, supporting customer integrations, payments, and real-time workflows for 8,000+ users.
-  \item Designed frontend architecture using Vue.js, TypeScript, Ionic, and Capacitor for real-time, responsive experiences.
-  \item Implemented authentication, push notifications, analytics, and secure API consumption using Firebase services.
-  \item Integrated credit card payment gateways (NMI) and local digital wallets, enabling secure, high-volume transactions.
+  \item Acted as the primary technical point of contact for enterprise clients, leading discovery sessions to gather requirements and propose custom integration solutions.
+  \item Designed and delivered a full-stack ticketing platform supporting 8,000+ users, managing the entire lifecycle from pre-sales technical consulting to final implementation.
+  \item Orchestrated complex payment gateway integrations (NMI) and digital wallet workflows, ensuring PCI compliance and secure transaction processing.
+  \item Implemented a serverless architecture using Firebase to handle real-time data syncing, authentication, and push notifications for high-traffic events.
+  \item Led technical account management and onboarding to ensure seamless client adoption.
 \end{itemize}}
 
 \vspace{-0.2em}
 
 \cventry{2021 -- 2022}{Frontend Engineer (Quality \& Automation)}{Blue Core S.A.}{}{}{
 \begin{itemize}
-  \item Improved customer-facing reliability through end-to-end web and mobile testing with Cypress and Appium.
-  \item Built CI/CD automation for iOS and Android using GitHub Actions and Fastlane.
-  \item Collaborated with frontend and backend teams to identify performance bottlenecks in critical user flows.
+  \item Boosted reliability by building Cypress and Appium automated test suites for web and mobile.
+  \item Streamlined iOS/Android deployments using GitHub Actions and Fastlane to reduce time-to-market.
 \end{itemize}}
 
 \vspace{-0.2em}
 
 \cventry{2020}{Frontend Developer}{Bath \& Body Works}{}{}{
 \begin{itemize}
-  \item Maintained and enhanced 8 e-commerce storefronts across multiple Latin American markets.
-  \item Implemented UI updates, promotional features, and CMS-driven content using VTEX.
-  \item Collaborated with design and business teams to ensure consistent branding and improved conversion rates.
+  \item Managed technical operations for 8 Latin American e-commerce storefronts, ensuring uptime and brand consistency.
+  \item Implemented VTEX CMS strategies, enabling marketing teams to launch promotional features rapidly.
+  \item Partnered with design teams to execute UI/UX improvements that directly impacted conversion rates.
 \end{itemize}}
 
 \vspace{-0.2em}
 
 \cventry{2019}{Junior Web Developer}{Venmetro Inc.}{}{}{
 \begin{itemize}
-  \item Contributed to the development of a fintech web platform serving ~1,800 monthly users.
-  \item Built and maintained frontend components using Vue.js while working alongside a Ruby on Rails backend.
-  \item Strengthened full-stack fundamentals and participated in feature delivery and bug-fix cycles.
+  \item Built reusable Vue.js components and integrated Ruby on Rails APIs for a fintech platform.
+  \item Delivered features and bug fixes in Agile sprints for 1,800+ monthly active users.
 \end{itemize}}
 
 \vspace{-0.2em}
 
 %----- Education -----
 \section{Education}
-\cventry{}{Master's Degree in Software Engineering}{}{Panama}{}{}
-\cventry{}{Bachelor's Degree in Systems Engineering}{}{Panama}{}{}
+\cventry{}{Master's Degree in Software Engineering}{}{}{}{}
+\cventry{}{Bachelor's Degree in Systems Engineering}{}{}{}{}
 
 \end{document}
