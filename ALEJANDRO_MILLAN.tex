@@ -9,6 +9,7 @@
 \usepackage[scale=0.92, top=1.2cm, bottom=1.2cm, left=1.3cm, right=1.3cm]{geometry}
 \setlength{\hintscolumnwidth}{2.5cm}
 \usepackage{fontawesome5}
+\usepackage{needspace}
 
 % Reduce vertical spacing
 \AtBeginDocument{\recomputelengths}
@@ -24,10 +25,17 @@
 \extrainfo{US Citizen — Authorized to work in the United States}
 \pagenumbering{gobble}
 
+% ---- Tighten spacing globally (ATS-safe) ----
+\usepackage{enumitem}
+\setlist[itemize]{topsep=2pt, itemsep=2pt, parsep=0pt, partopsep=0pt}
+
+\setlength{\parskip}{2pt}
+\setlength{\parsep}{0pt}
+
 \begin{document}
 
 \makecvtitle
-\vspace{-1.2em}
+\vspace{-1.5em}
 
 %----- Profile -----
 \section{Profile}
@@ -37,10 +45,10 @@ Senior Frontend Engineer with 6+ years of experience building scalable web and m
 
 %----- Technical Skills -----
 \section{Technical Skills}
-\cvitem{Frontend Engineering}{JavaScript (ES6+), TypeScript, Vue.js (Vue 3), Angular, Nuxt, Ionic, HTML5, CSS3, Tailwind, Bootstrap, Client-Side Rendering (CSR), Server-Side Rendering (SSR), PWAs, Frontend architecture, performance optimization, scalable UI systems}
-\cvitem{Cloud \& Backend Integration}{Firebase (Functions, Firestore, Authentication, Messaging, App Check, Analytics), AWS (Lambda, API Gateway, Amplify, Elastic Beanstalk), RESTful APIs, Axios, Firebase SDK}
+\cvitem{Frontend Engineering}{JavaScript (ES6+), TypeScript, Vue.js (Vue 3), Angular, React, Nuxt, Ionic, HTML5, CSS3, Tailwind, Bootstrap, Client-Side Rendering (CSR), Server-Side Rendering (SSR), PWAs, Frontend architecture, performance optimization, scalable UI systems}
+\cvitem{Cloud \& Backend}{Node.js, Firebase (Functions, Firestore, Authentication, Messaging, App Check, Analytics), AWS (Lambda, API Gateway, Amplify, Elastic Beanstalk), RESTful APIs, Axios, Firebase SDK}
 \cvitem{Testing, Tooling \& DevOps}{Cypress, Appium, Vitest, Jasmine, Karma, Vite, Webpack, ESLint, Prettier, npm, CI/CD with GitHub Actions and Fastlane}
-\cvitem{Collaboration \& Delivery}{Agile / Scrum methodologies, Git-based workflows, Jira, GitHub, Bitbucket, Slack, Microsoft Teams}
+\cvitem{Collaboration}{Agile / Scrum methodologies, Git-based workflows, Jira, GitHub, Bitbucket, Slack, Microsoft Teams}
 \cvitem{Languages}{English (Fluent), Spanish (Native)}
 
 \vspace{-0.4em}
@@ -53,20 +61,27 @@ Senior Frontend Engineer with 6+ years of experience building scalable web and m
   \item Led frontend architecture and hands-on development of a large-scale digital banking platform serving 200,000+ users.
   \item Designed and implemented 8+ critical customer journeys including onboarding, account recovery, and user reactivation.
   \item Built production-ready interfaces using Angular 19 and TypeScript, consuming RESTful APIs backed by AWS Lambda and API Gateway.
-  \item Integrated third-party services for biometric identity validation and online appointment scheduling (FacePhi, Microsoft Bookings).
+  \item Integrated third-party services for biometric validation and online appointment scheduling (FacePhi, Microsoft Bookings).
   \item Established frontend standards and best practices that improved code maintainability, performance, and scalability.
-  \item Performed code reviews, mentored engineers, and collaborated closely with backend, QA, and product teams while remaining an active individual contributor.
+\end{itemize}}
+
+\vspace{-0.4em}
+
+\cventry{2022 -- Present}{Lead Developer / Founder}{One Spot Inc.}{}{}{
+\begin{itemize}
+  \item Architected and led development of a web and mobile ticketing platform with 8,000+ registered users and 15,000+ tickets sold.
+  \item Designed the full frontend architecture using Vue.js, TypeScript, Ionic, and Capacitor, supporting real-time updates and responsive mobile experiences.
+  \item Implemented authentication, push notifications, analytics, and secure API consumption using Firebase services.
+  \item Integrated credit card payment gateways (NMI) and local digital wallets, enabling secure, high-volume transactions.
 \end{itemize}}
 
 \vspace{-0.2em}
 
-\vspace{-0.2em}
-
-\cventry{2021 -- 2022}{Frontend Engineer (Quality & Automation)}{Blue Core S.A.}{}{}{
+\cventry{2021 -- 2022}{Frontend Engineer (Quality \& Automation)}{Blue Core S.A.}{}{}{
 \begin{itemize}
   \item Improved frontend reliability by implementing end-to-end (E2E) automation across web and mobile platforms using Cypress and Appium.
-  \item Built and maintained CI/CD pipelines with GitHub Actions and Fastlane to automate testing, builds, and releases for iOS and Android.
-  \item Collaborated with frontend and backend teams to identify performance bottlenecks and prevent regressions in critical user flows.
+  \item Built CI/CD automation for iOS and Android using GitHub Actions and Fastlane.
+  \item Collaborated with frontend and backend teams to identify performance bottlenecks in critical user flows.
 \end{itemize}}
 
 \vspace{-0.2em}
@@ -87,19 +102,7 @@ Senior Frontend Engineer with 6+ years of experience building scalable web and m
   \item Strengthened full-stack fundamentals and participated in feature delivery and bug-fix cycles.
 \end{itemize}}
 
-\vspace{-0.4em}
-
-%----- Entrepreneurial Experience -----
-\section{Entrepreneurial Experience}
-
-\cventry{2022 -- Present}{Lead Developer / Founder}{One Spot Inc.}{}{}{
-\begin{itemize}
-  \item Architected and led development of a web and mobile ticketing platform with 8,000+ registered users and 15,000+ tickets sold.
-  \item Designed the full frontend architecture using Vue.js, Ionic, and Capacitor, supporting real-time updates and responsive mobile experiences.
-  \item Implemented authentication, push notifications, analytics, and secure API consumption using Firebase services.
-  \item Integrated credit card payment gateways (NMI) and local digital wallets, enabling secure, high-volume transactions.
-  \item Managed end-to-end delivery, including cloud infrastructure, CI/CD, and production releases to the App Store and Google Play.
-\end{itemize}}
+\vspace{-0.2em}
 
 %----- Education -----
 \section{Education}
